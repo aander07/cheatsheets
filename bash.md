@@ -649,6 +649,8 @@ python hello.py &>/dev/null    # stdout and stderr to (null)
 
 ```bash
 python hello.py < foo.txt      # feed foo.txt to stdin for python
+python hello.py < <( cmd )     # feed stdout from cmd to python
+python hello.py <<< "input"    # feed "input" to stdin for python
 ```
 
 ### Inspecting commands
